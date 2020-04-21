@@ -1,6 +1,6 @@
 // Класс для хранения и отрисовки карточек
 
-class CardList {
+export default class CardList {
     constructor(container, initCards, api) {
         this.container = container;
         this.initCards = initCards;

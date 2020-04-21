@@ -1,9 +1,24 @@
+import "../src/pages/index.css";
+
+import Api from "./scripts/Api";
+import Card from "./scripts/Card";
+import CardList from "./scripts/CardList";
+import CreateCardPopup from "./scripts/CreateCardPopup";
+import EditAuthorPopup from "./scripts/EditAuthorPopup";
+import FormValidator from "./scripts/FormValidator";
+import ImagePopup from "./scripts/ImagePopup";
+import Popup from "./scripts/Popup";
+import UserInfo from "./scripts/UserInfo";
+
 /* Переменные */
+
+const isDev = process.env.NODE_ENV === 'development';
+const baseUrlBuild = (isDev ? 'http://praktikum.tk/cohort9' : 'https://praktikum.tk/cohort9'); // Выбираем протокол в зависимости от сборки
 
 const placesList = document.querySelector('.places-list');
 
 const api = new Api({
-    baseUrl: 'https://praktikum.tk/cohort9',
+    baseUrl: baseUrlBuild,
     userToken: 'a6142428-eecb-43e3-9a6f-20c6d4937a9d'
 });
 

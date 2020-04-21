@@ -1,6 +1,6 @@
 // Класс, создающий карточку
 
-class Card {
+export default class Card {
     constructor(nameOfCard, imageOfCard, likeCounter, cardId) {
         this.nameOfCard = nameOfCard;
         this.imageOfCard = imageOfCard;

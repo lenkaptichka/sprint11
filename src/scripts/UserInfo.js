@@ -1,6 +1,6 @@
 // Класс для работы с данными пользователя
 
-class UserInfo {
+export default class UserInfo {
     constructor({name, info, element, api}) {
         this.authorName = name;
         this.authorInfo = info;

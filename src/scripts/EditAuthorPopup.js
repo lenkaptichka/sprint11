@@ -1,6 +1,8 @@
 // Класс, реализующий функционал попапа изменения имени и рода деятельности пользователя
 
-class EditAuthorPopup extends Popup {
+import Popup from "./Popup";
+
+export default class EditAuthorPopup extends Popup {
     constructor(element, userInfo) {
         super(element);
         this.userInfo = userInfo;

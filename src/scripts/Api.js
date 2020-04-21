@@ -1,6 +1,6 @@
 // Класс, реализующий работу с сервером
 
-class Api {
+export default class Api {
     constructor({baseUrl, userToken}) {
         this.baseUrl = baseUrl;
         this.userToken = userToken;
