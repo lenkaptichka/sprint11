@@ -7,7 +7,6 @@ import CreateCardPopup from "./scripts/CreateCardPopup";
 import EditAuthorPopup from "./scripts/EditAuthorPopup";
 import FormValidator from "./scripts/FormValidator";
 import ImagePopup from "./scripts/ImagePopup";
-import Popup from "./scripts/Popup";
 import UserInfo from "./scripts/UserInfo";
 
 /* Переменные */
