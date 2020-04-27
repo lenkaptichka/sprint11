@@ -1,6 +1,6 @@
 // Класс для валидации полей формы
 
-class FormValidator {
+export default class FormValidator {
     constructor(element) {
         this.element = element;
         this.popupForm = this.element.querySelector('.popup__form'); // Получение формы из попапа

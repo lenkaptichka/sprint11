@@ -1,6 +1,8 @@
 // Класс, реализующий функционал попапа окрытия картинки карточки
 
-class ImagePopup extends Popup {
+import Popup from "./Popup";
+
+export default class ImagePopup extends Popup {
     constructor(element) {
         super(element);       
     }

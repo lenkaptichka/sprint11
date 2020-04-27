@@ -1,6 +1,8 @@
 // Класс, реализующий функционал попапа создания новой карточки
 
-class CreateCardPopup extends Popup {
+import Popup from "./Popup";
+
+export default class CreateCardPopup extends Popup {
     constructor(element, createCard, cardList, api) {
         super(element);
         this.createCard = createCard;
