@@ -12,7 +12,7 @@ import UserInfo from "./scripts/UserInfo";
 /* Переменные */
 
 const isDev = process.env.NODE_ENV === 'development';
-const baseUrlBuild = (isDev ? 'http://praktikum.tk/cohort9' : 'https://praktikum.tk/cohort9'); // Выбираем протокол в зависимости от сборки
+const baseUrlBuild = (isDev ? 'http://nomoreparties.co/cohort9' : 'https://nomoreparties.co/cohort9'); // Выбираем протокол в зависимости от сборки
 
 const placesList = document.querySelector('.places-list');
 
@@ -29,7 +29,7 @@ const userInfo = new UserInfo({
 
 
 // Отрисовка карточек
-const newCard = (nameOfCard, imageOfCard, likeCounter, cardId) => new Card(nameOfCard, imageOfCard, likeCounter, cardId);
+const newCard = (nameOfCard, imageOfCard, likeCounter, cardId, isMine) => new Card(nameOfCard, imageOfCard, likeCounter, cardId, isMine);
 const cardList = new CardList(placesList, newCard, api);
 cardList.render();
 
@@ -65,4 +65,3 @@ placesList.addEventListener('click', function (event) {
         imagePopup.setBackground(event.target);
     }
 });
-

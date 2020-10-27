@@ -7,8 +7,8 @@ export default class UserInfo {
         this.userNameElement = element.querySelector('.user-info__name');
         this.userInfoElement = element.querySelector('.user-info__job');
         this.api = api;
-        this.id = null;
-        this.updateUserInfo();      
+        // this.id = null;
+        this.updateUserInfo();
     }
 
     setUserInfo(authorName, authorInfo) {
@@ -23,7 +23,6 @@ export default class UserInfo {
     }
 
     updateUserInfo() {
-
         this.api.loadUserInfo()
             .then(data => {
                 const name = data.name;

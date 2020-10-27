@@ -1,11 +1,12 @@
 // Класс, создающий карточку
 
 export default class Card {
-    constructor(nameOfCard, imageOfCard, likeCounter, cardId) {
+    constructor(nameOfCard, imageOfCard, likeCounter, cardId, isMine) {
         this.nameOfCard = nameOfCard;
         this.imageOfCard = imageOfCard;
         this.likeCounter = likeCounter;
         this.cardId = cardId;
+        this.isMine = isMine;
         this.element = null;
     }
 
@@ -20,7 +21,7 @@ export default class Card {
     create() {
         this.element = document.createElement('div');
         this.element.classList.add('place-card');
-        this.element.dataset.id = this.cardId; // Делала, чтобы потом реализовать удаление карточки (оставила на каникулы, боюсь не успеть :( )
+        // this.element.dataset.id = this.cardId; // Делала, чтобы потом реализовать удаление карточки (оставила на каникулы, боюсь не успеть :( )
         this.element.innerHTML = `<div class="place-card__image" style="background-image: url(${this.imageOfCard})">
             <button class="place-card__delete-icon"></button>
         </div>

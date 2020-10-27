@@ -4,8 +4,7 @@ export default class CardList {
     constructor(container, initCards, api) {
         this.container = container;
         this.initCards = initCards;
-        this.api= api;
-        
+        this.api= api;       
     }
 
     addCard(card) {

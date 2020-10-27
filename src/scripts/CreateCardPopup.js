@@ -23,9 +23,7 @@ export default class CreateCardPopup extends Popup {
                 this.cardList.addCard(card);
                 this.reset();
                 this.close();
-            })
-
-            
+            })          
 
             .catch(err => {
                 console.log(err);
