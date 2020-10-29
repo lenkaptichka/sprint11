@@ -8,13 +8,13 @@
 
 ###Что использовалось для разработки:
 Что использовалось для разработки
--HTML;
--CSS;
--BEM;
--JS(ES5/ES6);
--API;
--GIT;
--Webpack.
+- HTML;
+- CSS;
+- BEM;
+- JS(ES5/ES6);
+- API;
+- GIT;
+- Webpack.
 
 [Ссылка на итоговую страницу](https://lenkaptichka.github.io/Mesto/)
 
